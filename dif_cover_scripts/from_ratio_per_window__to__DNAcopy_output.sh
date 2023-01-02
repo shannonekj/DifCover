@@ -1,4 +1,10 @@
 #!/bin/bash
+# initialize conda
+. ~/miniconda3/etc/profile.d/conda.sh
+
+# activate conda env
+conda activate difcover
+
 SCRIPT_PATH=$(dirname `which $0`)
 if [ "$#" -ne 2 ]; then
 echo "Wrong number of arguments!"
